@@ -40,10 +40,12 @@ const displayAverageSalary = function (employeesArray) {
   );
 };
 
-// // Select a random employee
-// const getRandomEmployee = function (employeesArray) {
-//   // TODO: Select and display a random employee
-// };
+// Select a random employee
+const getRandomEmployee = function (employeesArray) {
+  // TODO: Select and display a random employee
+  const randomInt = Math.floor(Math.random());
+  console.log(`Your number is ${randomInt}`);
+};
 
 /*
   ====================
