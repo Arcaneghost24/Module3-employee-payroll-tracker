@@ -43,8 +43,11 @@ const displayAverageSalary = function (employeesArray) {
 // Select a random employee
 const getRandomEmployee = function (employeesArray) {
   // TODO: Select and display a random employee
-  const randomInt = Math.floor(Math.random());
-  console.log(`Your number is ${randomInt}`);
+  const randomInt = Math.floor(Math.random() * employeesArray.length);
+  const randomEmployee = employeesArray[randomInt];
+  console.log(
+    `Employee randomly selected for performance review: ${randomEmployee.firstName} ${randomEmployee.lastName}.`
+  );
 };
 
 /*
@@ -97,7 +100,7 @@ const trackEmployeeData = function () {
 
   console.log("==============================");
 
-  // getRandomEmployee(employees);
+  getRandomEmployee(employees);
 
   employees.sort(function (a, b) {
     if (a.lastName < b.lastName) {
