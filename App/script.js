@@ -22,7 +22,6 @@ const collectEmployees = function () {
     employees.push(employee);
     continueInput = confirm("Add another employee?");
   }
-  console.log(employees);
   return employees;
 };
 
